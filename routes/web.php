@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/car', function () {
+    $cars = DB::table('cars')->get();
+    return view('car', ['cars' => $cars]);
+});
