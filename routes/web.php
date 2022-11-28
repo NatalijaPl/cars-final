@@ -25,3 +25,4 @@ Route::get('/car', function () {
     $cars = DB::table('cars')->get();
     return view('car', ['cars' => $cars]);
 });
+Route::get('/cars/{id}', [CarController::class, 'show'])->name('single-car');
