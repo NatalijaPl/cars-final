@@ -9,8 +9,8 @@ class CarController extends Controller
 {
     public function index()
     {
-        $cars = Car::published();
-        return view('cars', compact('cars'));
+        $cars = Car::all();
+        return view('cars', compact('car'));
     }
 
     public function show($id)

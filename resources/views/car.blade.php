@@ -9,13 +9,13 @@
 <body>
   <body>
     <h1>Cars</h1>
-    @foreach($cars as $cars => $car)
-        <ul>    
+    @foreach($cars as $car)
+        <ul>
         {{-- <li>{{$car->id}}</li>
         <li>{{$car->created_at}}</li>
         <li>{{$car->updated_at}}</li> --}}
         <li>{{$car->title}}</li>
-        <li>{{$car->producer}}</li>                 
+        <li>{{$car->producer}}</li>
         {{-- <li>{{$car->number_of_doors}}</li>                  --}}
         </ul>
     @endforeach
